@@ -11,6 +11,12 @@ app.use(cookieParser());
 app.use(cors({credentials:true}))
 
 
+
+app.get('/', (req, res) => {
+    res.send('welcome to auth server');
+});
+
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
